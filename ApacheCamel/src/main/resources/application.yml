@@ -1,0 +1,30 @@
+input:
+    queue: jms:INBOUND.D
+    queueFromVirtualTopic: jms:Consumer.A.VirtualTopic.abc
+    topic: activemq:topic:abc
+max:
+    concurrent:
+        consumers: 2
+spring:
+    activemq:
+        broker-url: tcp://localhost:61616
+        password: admin
+        pool:
+            enabled: true
+            max-connections: 10
+        user: admin
+    application::
+        name: node
+
+---
+spring.profiles: node1
+
+server:
+    port: 8080
+
+---
+spring.profiles: node2
+
+server:
+    port: 8081
+
