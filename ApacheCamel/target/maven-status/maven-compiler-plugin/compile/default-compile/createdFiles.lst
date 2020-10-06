@@ -1,3 +1,4 @@
 com\jms\routes\JmsTestRouter.class
+com\activemq\producer\ProducerFactory.class
 com\jms\config\Config.class
 com\jms\App.class

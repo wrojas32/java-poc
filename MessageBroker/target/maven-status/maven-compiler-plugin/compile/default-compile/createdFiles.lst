@@ -1,0 +1,4 @@
+com\activemq\groups\ProducerFactory.class
+com\activemq\queue\receiver\MessageReceiver.class
+com\activemq\queue\sender\MessageSender.class
+com\activemq\groups\ConsumerFactory.class
